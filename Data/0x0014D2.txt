@@ -1,7 +1,0 @@
-Per Sprite: 
-
--- 4 Bytes Sprite Header (2 Bytes Chunk Count; 2 Bytes 8x8 Tile Count) 
--- 6 Bytes Chunk Header (2 Bytes Offset X with Byte 1 as B1 and Byte 2 as B2 --- Offset X = -B1+B2; 2 Bytes Offset Y with Byte 1 as B1 and Byte 2 as B2 --- Offset Y = -B1+B2; 1 Byte Y Size; 1 Byte half of X Size) 
--- Chunk Data
-
-If a sprite contains more than one Chunk, the Chunk-Headers will all come first, after all headers comes all data bunched together.
