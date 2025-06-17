@@ -2,30 +2,39 @@ Sonic Spinball (Genesis Classics ROM) Binary Analysis:<br/>
 <a href="data/NOTHING.txt" style="color: red;">0x000000 - 0x0000FF</a><br/>
 
 <a href="data/0x000100.txt" style="color: green;">0x000100 - 0x0001F0: Header</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x0001F1 - 0x0001FF</a><br/>
 
 <a href="data/0x000200.txt" style="color: green;">0x000200 - 0x00028D: Code</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x00028E - 0x0002F9</a><br/>
 
 <a href="data/0x0002FA.txt" style="color: green;">0x0002FA - 0x00040D: Code</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x00040E - 0x000667</a><br/>
 
 <a href="data/0x000668.txt" style="color: green;">0x000668 - 0x0006FD: Code</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x0006FE - 0x000DFB</a><br/>
 
 <a href="data/0x000DFC.txt" style="color: green;">0x000DFC - 0x0013FB: Palettes</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x0013FC - 0x0014D1</a><br/>
 
 <a href="data/0x0014D2.txt" style="color: green;">0x0014D2 - 0x0C7653: Object Sprites</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x0C7654 - 0x0D3D45</a><br/>
 
 <a href="data/0x0D3D46.txt" style="color: green;">0x0D3D46 - 0x0D3DF4: Code</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x0D3DF5 - 0x0993F9</a><br/>
 
 <a href="data/0x0993FA.txt" style="color: green;">0x0993FA - 0x099439: Palettes</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x09943A - 0x0A1387</a><br/>
 
 <a href="data/0x0A1388.txt" style="color: green;">0x0A1388 - 0x0A1407: Palettes</a><br/>
+
 <a href="data/NOTHING.txt" style="color: red;">0x0A1408 - 0x0FFFFF</a><br/>
 <br/>
 <br/>
