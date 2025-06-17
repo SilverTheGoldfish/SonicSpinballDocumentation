@@ -1,0 +1,50 @@
+000200: 4AB9 00A1 0008      tst.l  $00A10008
+000206: 6606                bne.s  *cc_0x00020E  {00020E}
+000208: 4A79 00A1 000C      tst.w  $00A1000C
+00020E: 667C                bne.s  *cc_0x00028C  {00028C}
+000210: 4BFA 007C           lea  $7C(PC)  {00028E}, A5
+000214: 4C9D 00E0           movem.w  (A5)+, D5-D7
+000218: 4CDD 1F00           movem.l  (A5)+, A0-A4
+00021C: 1029 EF01           move.b  $-10FF(A1), D0
+000220: 0200 000F           andi.b  #$f, D0
+000224: 6708                beq.s  *cc_0x00022E  {00022E}
+000226: 237C 5345 4741 2F00 move.l  #$53454741  'SEGA', $2F00(A1)
+00022E: 3014                move.w  (A4), D0
+000230: 7000                moveq  #$0, D0
+000232: 2C40                movea.l  D0, A6
+000234: 4E66                move  A6, USP
+000236: 7217                moveq  #$17, D1
+000238: 1A1D                move.b  (A5)+, D5
+00023A: 3885                move.w  D5, (A4)
+00023C: DA47                add.w  D7, D5
+00023E: 51C9 FFF8           dbra  D1, *cc_0x000238  {000238}
+000242: 289D                move.l  (A5)+, (A4)
+000244: 3680                move.w  D0, (A3)
+000246: 3287                move.w  D7, (A1)
+000248: 3487                move.w  D7, (A2)
+00024A: 0111                btst  D0, (A1)
+00024C: 66FC                bne.s  *cc_0x00024A  {00024A}
+00024E: 7425                moveq  #$25, D2
+000250: 10DD                move.b  (A5)+, (A0)+
+000252: 51CA FFFC           dbra  D2, *cc_0x000250  {000250}
+000256: 3480                move.w  D0, (A2)
+000258: 3280                move.w  D0, (A1)
+00025A: 3487                move.w  D7, (A2)
+00025C: 2D00                move.l  D0, -(A6)
+00025E: 51CE FFFC           dbra  D6, *cc_0x00025C  {00025C}
+000262: 289D                move.l  (A5)+, (A4)
+000264: 289D                move.l  (A5)+, (A4)
+000266: 761F                moveq  #$1F, D3
+000268: 2680                move.l  D0, (A3)
+00026A: 51CB FFFC           dbra  D3, *cc_0x000268  {000268}
+00026E: 289D                move.l  (A5)+, (A4)
+000270: 7813                moveq  #$13, D4
+000272: 2680                move.l  D0, (A3)
+000274: 51CC FFFC           dbra  D4, *cc_0x000272  {000272}
+000278: 7A03                moveq  #$3, D5
+00027A: 175D 0011           move.b  (A5)+, $11(A3)
+00027E: 51CD FFFA           dbra  D5, *cc_0x00027A  {00027A}
+000282: 3480                move.w  D0, (A2)
+000284: 4CD6 7FFF           movem.l  (A6), D0-D7/A0-A6
+000288: 46FC 2700           move #$2700, SR
+00028C: 606C                bra.s  *j_0x0002FA  {0002FA}
