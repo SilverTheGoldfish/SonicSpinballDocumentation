@@ -1,0 +1,47 @@
+0D3D46: 4EF9 000F 62B8      jmp  j_0x0F62B8
+0D3D4C: 4A39 00FF F2C8      tst.b  $00FFF2C8
+0D3D52: 66F2                bne.s  *cc_0x0D3D46  {0D3D46}
+0D3D54: 48E7 C0C0           movem.l  D0-D1/A0-A1, -(A7)
+0D3D58: 5279 00FF 0000      addq.w  #1, $00FF0000
+0D3D5E: 4A39 00FF 7838      tst.b  $00FF7838
+0D3D64: 6606                bne.s  *cc_0x0D3D6C  {0D3D6C}
+0D3D66: 5379 00FF F1FA      subq.w  #1, $00FFF1FA
+0D3D6C: 4EB9 000D 873A      jsr  sub_0x0D873A
+0D3D72: 4EB9 000D 4F2A      jsr  sub_0x0D4F2A
+0D3D78: 4EB9 000F EBD0      jsr  sub_0x0FEBD0
+0D3D7E: 4EB9 000D F89C      jsr  sub_0x0DF89C
+0D3D84: 43F9 00A1 1100      lea  $00A11100, A1
+0D3D8A: 32BC 0100           move.w  #$100, (A1)
+0D3D8E: 41F9 00A1 0003      lea  $00A10003, A0
+0D3D94: 4A39 00FF 5746      tst.b  $00FF5746
+0D3D9A: 6702                beq.s  *cc_0x0D3D9E  {0D3D9E}
+0D3D9C: 5488                addq.l  #2, A0
+0D3D9E: 703F                moveq  #$3F, D0
+0D3DA0: C010                and.b  (A0), D0
+0D3DA2: 10BC 0000           move.b  #$0, (A0)
+0D3DA6: 7230                moveq  #$30, D1
+0D3DA8: C210                and.b  (A0), D1
+0D3DAA: 10BC 0040           move.b  #$40, (A0)
+0D3DAE: E509                lsl.b  #2, D1
+0D3DB0: 8001                or.b  D1, D0
+0D3DB2: 4600                not.b  D0
+0D3DB4: 1239 00FF F8D7      move.b  $00FFF8D7, D1
+0D3DBA: 6728                beq.s  *cc_0x0D3DE4  {0D3DE4}
+0D3DBC: 5301                subq.b  #1, D1
+0D3DBE: 6612                bne.s  *cc_0x0D3DD2  {0D3DD2}
+0D3DC0: 1200                move.b  D0, D1
+0D3DC2: E809                lsr.b  #4, D1
+0D3DC4: 0241 0003           andi.w  #$3, D1
+0D3DC8: 123B 102A           move.b  $2A(PC,D1.W), D1
+0D3DCC: 0200 00CF           andi.b  #$cf, D0
+0D3DD0: 6010                bra.s  *j_0x0D3DE2  {0D3DE2}
+0D3DD2: 1200                move.b  D0, D1
+0D3DD4: E809                lsr.b  #4, D1
+0D3DD6: 0241 0007           andi.w  #$7, D1
+0D3DDA: 123B 101C           move.b  $1C(PC,D1.W), D1
+0D3DDE: 0200 008F           andi.b  #$8f, D0
+0D3DE2: 8001                or.b  D1, D0
+0D3DE4: 13C0 00FF 0005      move.b  D0, $00FF0005
+0D3DEA: 32BC 0000           move.w  #$0, (A1)
+0D3DEE: 4CDF 0303           movem.l  (A7)+, D0-D1/A0-A1
+0D3DF2: 4E73                rte
